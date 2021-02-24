@@ -13,6 +13,9 @@
  */
 class App {
 public:
+    /**
+     * Main function which should be run as thread
+     */
     void run();
 };
 
