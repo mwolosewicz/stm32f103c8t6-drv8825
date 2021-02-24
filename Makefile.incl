@@ -15,7 +15,7 @@ ASFLAGS		= -mthumb -mcpu=cortex-m3
 
 CC		:= $(PREFIX)-gcc
 CXX		:= $(PREFIX)-g++
-LD		:= $(PREFIX)-gcc
+LD		:= $(PREFIX)-g++
 AR		:= $(PREFIX)-ar
 AS		:= $(PREFIX)-as
 OBJCOPY		:= $(PREFIX)-objcopy
@@ -48,7 +48,7 @@ TGT_CXXFLAGS	+= -Wextra -Wshadow -Wredundant-decls  -Weffc++
 TGT_CXXFLAGS	+= -fno-common -ffunction-sections -fdata-sections
 
 TGT_CPPFLAGS	+= -MD
-TGT_CPPFLAGS	+= -Wall -Wundef
+TGT_CPPFLAGS	+= -Wall -Wundef -lstdc++
 TGT_CPPFLAGS	+= $(DEFS)
 TGT_CPPFLAGS	+= -I$(OPENCM3_DIR)/include
 
