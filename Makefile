@@ -4,7 +4,7 @@
 
 RTOS_DIR = extern/FreeRTOS
 
-BINARY   = rtos_blink
+BINARY   = blue_drv8825
 
 RTOS_FILES = ${RTOS_DIR}/heap_4.c ${RTOS_DIR}/list.c ${RTOS_DIR}/port.c ${RTOS_DIR}/tasks.c ${RTOS_DIR}/opencm3.c
 
